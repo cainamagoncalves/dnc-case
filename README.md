@@ -5,9 +5,9 @@
 
 <p align="center">
  <a href="#Sobre">Sobre</a> • 
- <a href="#Estrutura-de-Dados">Estrutura de Dados</a> • 
+ <a href="#Estrutura-de-dados">Estrutura de dados</a> • 
  <a href="#Páginas">Páginas</a> •
- <a href="#Rodando-o-projeto">Rodando o Projeto</a> • 
+ <a href="#Rodando-o-projeto">Rodando o projeto</a> • 
  <a href="#Autor">Autor</a>
 </p>
 
@@ -29,9 +29,7 @@
 
 Este projeto tem como objetivo desenvolver um case para a DNC de uma plataforma de estudos online, com objetivo de disponibilizar recursos educacionais para os usuários.
 
-### About
-
-### 📄 Estrutura de Dados
+### Estrutura de dados
 
 Os dados estão estruturados em json, no arquivo db.json
 
@@ -126,7 +124,7 @@ Há duas principais entidades declaradas no arquivo, "courses" e "users".
 
 A separação é devido a necessidade de simular o login de um usuário na plataforma.
 
-## 💻 Páginas
+### Páginas
 
 ### Home
 
