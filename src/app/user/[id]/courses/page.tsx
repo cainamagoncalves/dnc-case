@@ -10,7 +10,9 @@ export default async function MyCourses({
   params: { id: string }
 }) {
   const response = await fetch('http://localhost:3333/courses', {
-    cache: 'no-cache',
+    next: {
+      revalidate: 0,
+    },
   })
 
   const courses: Course[] = await response.json()
@@ -30,7 +32,7 @@ export default async function MyCourses({
       <Suspense fallback={<Loading />}>
         <Header />
         <main className="pt-44">
-          <div className="max-w-[1120px] m-auto">
+          <div className="max-w-[1120px] m-auto p-4 md:p-0">
             <SearchCourses courses={userCourses} />
           </div>
         </main>

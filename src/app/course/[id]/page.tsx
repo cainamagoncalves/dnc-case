@@ -7,7 +7,9 @@ import { Loading } from '@/components/Loading'
 
 export default async function Course({ params }: { params: { id: string } }) {
   const response = await fetch(`http://localhost:3333/courses/${params.id}`, {
-    cache: 'no-cache',
+    next: {
+      revalidate: 0,
+    },
   })
 
   const course: Course = await response.json()
@@ -17,7 +19,7 @@ export default async function Course({ params }: { params: { id: string } }) {
       <Suspense fallback={<Loading />}>
         <Header />
         <main className="mt-44">
-          <div className="grid mb-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 grid-flow-col gap-4 max-w-[1120px] m-auto mt-20 px-6 md:px-0 lg:px-0">
+          <div className="grid mb-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 grid-flow-col gap-4 max-w-[1120px] m-auto mt-20 px-6 md:px-0">
             <div className="flex flex-col justify-between items-center md:items-start text-center md:text-start lg:text-start gap-6">
               <div className="flex flex-col gap-4">
                 <h1 className="text-5xl font-bold">{course.name}</h1>

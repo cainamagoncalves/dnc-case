@@ -32,12 +32,12 @@ export function Header() {
             >
               MEUS CURSOS
             </span>
-            <Button onClick={logout} variant="outline">
+            <Button onClick={logout} variant="outline" className="mr-2 md:mr-0">
               Sair
             </Button>
           </div>
         ) : (
-          <div className="inline-flex items-center gap-4">
+          <div className="inline-flex items-center gap-4 px-4 md:px-0">
             <Button
               onClick={() =>
                 login({ email: 'jhondoe@email.com', password: '1234' })

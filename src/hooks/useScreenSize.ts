@@ -6,8 +6,6 @@ export const useScreenSize = () => {
     height: 1024,
   })
   useEffect(() => {
-    console.log(window.innerHeight, 'aioshdahs')
-
     const handleResize = () => {
       setScreenSize({
         width: window.innerWidth,

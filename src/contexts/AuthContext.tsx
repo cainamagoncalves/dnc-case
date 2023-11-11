@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode, createContext, useState } from 'react'
+import { ReactNode, createContext, useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
 
 type LoginProps = {
@@ -23,6 +23,16 @@ export const AuthContext = createContext({} as AuthContextProps)
 export function AuthContextProvider({ children }: AuthContextProviderProps) {
   const [user, setUser] = useState<Omit<User, 'password'> | null>(null)
 
+  useEffect(() => {
+    if (!user) {
+      const localStorageUser = localStorage.getItem('user')
+
+      if (localStorageUser) {
+        setUser(JSON.parse(localStorageUser)[0])
+      }
+    }
+  }, [user])
+
   async function login(props: LoginProps) {
     const response = await fetch(
       `http://localhost:3333/users?email=${props.email}&password=${props.password}`,
@@ -36,12 +46,17 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
 
     delete user.password
 
+    localStorage.setItem('user', JSON.stringify(user))
+
     setUser(user[0])
 
     toast.success('Login realizado com sucesso!')
   }
 
-  const logout = () => setUser(null)
+  const logout = () => {
+    setUser(null)
+    localStorage.removeItem('user')
+  }
 
   return (
     <AuthContext.Provider

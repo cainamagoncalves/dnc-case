@@ -14,7 +14,7 @@ type CourseActionsProps = {
 export function CourseActions({ course }: CourseActionsProps) {
   const [isLoading, setIsLoading] = useState(false)
   const { user } = useAuth()
-  const { push: redirect } = useRouter()
+  const { push: redirect, refresh } = useRouter()
 
   const isSubscribed =
     !!user && course.students.find((student) => student.id === user.id)
@@ -49,6 +49,7 @@ export function CourseActions({ course }: CourseActionsProps) {
     } finally {
       toast.success('Inscrição realizada com sucesso!')
       setIsLoading(false)
+      refresh()
     }
   }
 
@@ -80,6 +81,7 @@ export function CourseActions({ course }: CourseActionsProps) {
     } finally {
       toast.success('Inscrição removida com sucesso!')
       setIsLoading(false)
+      refresh()
     }
   }
 
