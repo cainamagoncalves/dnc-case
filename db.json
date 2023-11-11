@@ -190,12 +190,7 @@
           "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sagittis malesuada. Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed placerat sagittis malesuada."
         }
       ],
-      "students": [
-        {
-          "id": 1,
-          "name": "Jhon Doe"
-        }
-      ],
+      "students": [],
       "contents": [
         {
           "id": 1,
@@ -439,6 +434,160 @@
             "id": 2,
             "name": "Jhon Doe",
             "role": "Desenvolvedor front end Jr",
+            "photo": "https://i.imgur.com/hw41aPx.png"
+          },
+          "description": "In tempus molestie quam at imperdiet. Pellentesque sollicitudin elit lacus, eu porttitor elit gravida a. Nulla varius, quam id pharetra tempus, felis leo dapibus augue, in mollis sapien urna ut quam. Pellentesque molestie lobortis magna, id mattis est scelerisque sit amet. Pellentesque eget erat turpis. Sed pellentesque nunc massa, a suscipit neque ultrices vel. Vestibulum quis imperdiet lacus. Curabitur libero tellus, tincidunt sit amet purus nec, ultrices faucibus justo. Duis metus nisi, varius eu gravida ac, sollicitudin vel felis. Donec facilisis scelerisque eros, sit amet gravida massa imperdiet et. Curabitur vitae libero quis massa rutrum pellentesque. Morbi nec dignissim arcu. Nulla dui ligula, tempor laoreet malesuada in, vestibulum vel ex."
+        },
+        {
+          "id": 3,
+          "value": 4,
+          "rated_by": {
+            "id": 2,
+            "name": "Jhon Doe",
+            "role": "Software Enginner PL",
+            "photo": "https://i.imgur.com/hw41aPx.png"
+          },
+          "description": "In tempus molestie quam at imperdiet. Pellentesque sollicitudin elit lacus, eu porttitor elit gravida a. Nulla varius, quam id pharetra tempus, felis leo dapibus augue, in mollis sapien urna ut quam. Pellentesque molestie lobortis magna, id mattis est scelerisque sit amet. Pellentesque eget erat turpis. Sed pellentesque nunc massa, a suscipit neque ultrices vel. Vestibulum quis imperdiet lacus. Curabitur libero tellus, tincidunt sit amet purus nec, ultrices faucibus justo. Duis metus nisi, varius eu gravida ac, sollicitudin vel felis. Donec facilisis scelerisque eros, sit amet gravida massa imperdiet et. Curabitur vitae libero quis massa rutrum pellentesque. Morbi nec dignissim arcu. Nulla dui ligula, tempor laoreet malesuada in, vestibulum vel ex."
+        },
+        {
+          "id": 4,
+          "value": 5,
+          "description": "siojdhnaidhiahdiuahsdas",
+          "rated_by": {
+            "id": 1,
+            "name": "Jhon Doe",
+            "role": "Desenolvedor back end",
+            "photo": "https://i.imgur.com/hw41aPx.png"
+          }
+        },
+        {
+          "id": 5,
+          "value": 5,
+          "description": "Testando mais uma",
+          "rated_by": {
+            "id": 1,
+            "name": "Jhon Doe",
+            "role": "Desenolvedor back end",
+            "photo": "https://i.imgur.com/hw41aPx.png"
+          }
+        },
+        {
+          "id": 6,
+          "value": 5,
+          "description": "Testando...",
+          "rated_by": {
+            "id": 1,
+            "name": "Jhon Doe",
+            "role": "Desenolvedor back end",
+            "photo": "https://i.imgur.com/hw41aPx.png"
+          }
+        }
+      ],
+      "instructor": {
+        "id": 1,
+        "name": "Jhon Doe",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nisi velit, pulvinar ac justo et, bibendum ullamcorper neque. Nulla augue ligula, varius at enim et, interdum condimentum libero. Morbi in aliquam tellus, eu gravida ante. In scelerisque quam bibendum urna maximus ornare. Donec fermentum interdum augue in dictum. Fusce sit amet laoreet urna. Nunc ornare, quam sed vulputate sollicitudin, nunc felis eleifend massa, at aliquam libero massa eget urna. Quisque vel sapien ac erat iaculis varius. Phasellus at elit vel felis porttitor dapibus. Nunc tortor arcu, auctor non blandit non, vulputate ac neque. Phasellus a eleifend ipsum. Duis at sapien nisl. Donec non sem vestibulum, interdum tortor nec, tincidunt diam. Morbi id velit sollicitudin, pellentesque orci eget, ullamcorper elit.",
+        "photo": "https://i.imgur.com/8YjbLCC.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "name": "data-science",
+      "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Sed et magna sapien. Morbi mauris orci, congue in lacus at, pellentesque tristique purus. Vestibulum ut turpis non lorem faucibus bibendum a vitae nulla. Nullam mattis metus sed felis viverra, nec semper lacus pretium. Curabitur at justo in nulla scelerisque tempor. Maecenas non nulla a orci egestas efficitur. Sed venenatis quam in eleifend sodales. Donec dapibus ipsum mauris, a malesuada dui congue sed.",
+      "imageUrl": "https://i.imgur.com/3r2dpOM.png",
+      "requirements": [
+        {
+          "id": 1,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sagittis malesuada. Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed placerat sagittis malesuada."
+        },
+        {
+          "id": 2,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sagittis malesuada. Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed placerat sagittis malesuada."
+        }
+      ],
+      "students": [
+        {
+          "id": 1,
+          "name": "Jhon Doe"
+        }
+      ],
+      "contents": [
+        {
+          "id": 1,
+          "title": "Título do conteúdo",
+          "leasons": [
+            {
+              "title": "Aula 1",
+              "duration": 19000,
+              "videoUrl": "https://www.youtube.com/embed/K4TOrB7at0Y",
+              "description": "Descrição da aula",
+              "complementary_materials": [
+                {
+                  "name": "Material",
+                  "url": "url"
+                }
+              ]
+            }
+          ],
+          "quizzes": [
+            {
+              "title": "Quiz",
+              "questions": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Título do conteúdo da segunda semana",
+          "leasons": [
+            {
+              "title": "Aula 1",
+              "duration": 19000,
+              "videoUrl": "https://www.youtube.com/embed/K4TOrB7at0Y",
+              "description": "In tempus molestie quam at imperdiet. Pellentesque sollicitudin elit lacus, eu porttitor elit gravida a. Nulla varius, quam id pharetra tempus, felis leo dapibus augue, in mollis sapien urna ut quam. Pellentesque molestie lobortis magna, id mattis est scelerisque sit amet. Pellentesque eget erat turpis. Sed pellentesque nunc massa, a suscipit neque ultrices vel. Vestibulum quis imperdiet lacus. Curabitur libero tellus, tincidunt sit amet purus nec, ultrices faucibus justo. Duis metus nisi, varius eu gravida ac, sollicitudin vel felis.",
+              "complementary_materials": [
+                {
+                  "name": "Material para download",
+                  "url": "url"
+                }
+              ]
+            },
+            {
+              "title": "Aula 2",
+              "duration": 19000,
+              "videoUrl": "https://www.youtube.com/embed/K4TOrB7at0Y",
+              "description": "In tempus molestie quam at imperdiet. Pellentesque sollicitudin elit lacus, eu porttitor elit gravida a. Nulla varius, quam id pharetra tempus, felis leo dapibus augue, in mollis sapien urna ut quam. Pellentesque molestie lobortis magna, id mattis est scelerisque sit amet. Pellentesque eget erat turpis. Sed pellentesque nunc massa, a suscipit neque ultrices vel. Vestibulum quis imperdiet lacus. Curabitur libero tellus, tincidunt sit amet purus nec, ultrices faucibus justo. Duis metus nisi, varius eu gravida ac, sollicitudin vel felis.",
+              "complementary_materials": [
+                {
+                  "name": "Material para download",
+                  "url": "url"
+                }
+              ]
+            },
+            {
+              "title": "Aula 3",
+              "duration": 60000,
+              "videoUrl": "https://www.youtube.com/embed/KIfdTwI4WVw",
+              "description": "In tempus molestie quam at imperdiet. Pellentesque sollicitudin elit lacus, eu porttitor elit gravida a. Nulla varius, quam id pharetra tempus, felis leo dapibus augue, in mollis sapien urna ut quam. Pellentesque molestie lobortis magna, id mattis est scelerisque sit amet. Pellentesque eget erat turpis. Sed pellentesque nunc massa, a suscipit neque ultrices vel. Vestibulum quis imperdiet lacus. Curabitur libero tellus, tincidunt sit amet purus nec, ultrices faucibus justo. Duis metus nisi, varius eu gravida ac, sollicitudin vel felis.",
+              "complementary_materials": [
+                {
+                  "name": "Material para download",
+                  "url": "url"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "ratings": [
+        {
+          "id": 1,
+          "value": 5,
+          "rated_by": {
+            "id": 1,
+            "name": "Jhon Doe",
+            "role": "Desenvolvedor back end",
             "photo": "https://i.imgur.com/hw41aPx.png"
           },
           "description": "In tempus molestie quam at imperdiet. Pellentesque sollicitudin elit lacus, eu porttitor elit gravida a. Nulla varius, quam id pharetra tempus, felis leo dapibus augue, in mollis sapien urna ut quam. Pellentesque molestie lobortis magna, id mattis est scelerisque sit amet. Pellentesque eget erat turpis. Sed pellentesque nunc massa, a suscipit neque ultrices vel. Vestibulum quis imperdiet lacus. Curabitur libero tellus, tincidunt sit amet purus nec, ultrices faucibus justo. Duis metus nisi, varius eu gravida ac, sollicitudin vel felis. Donec facilisis scelerisque eros, sit amet gravida massa imperdiet et. Curabitur vitae libero quis massa rutrum pellentesque. Morbi nec dignissim arcu. Nulla dui ligula, tempor laoreet malesuada in, vestibulum vel ex."

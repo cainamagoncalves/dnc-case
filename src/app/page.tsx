@@ -6,12 +6,36 @@ import { FeaturedCourseCard } from '@/components/FeaturedCourseCard'
 import { SearchCourses } from '@/components/SearchCourses'
 import { Loading } from '@/components/Loading'
 
+type CourseRating = Pick<Course, 'id' | 'name' | 'imageUrl' | 'description'> & {
+  ratingSummary: number
+}
+
 export default async function Home() {
   const response = await fetch('http://localhost:3333/courses', {
     cache: 'no-cache',
   })
 
   const coursesData: Course[] = await response.json()
+
+  const coursesRatings = coursesData
+    ?.reduce<CourseRating[]>((acc, curr) => {
+      const course = {
+        id: curr.id,
+        name: curr.name,
+        imageUrl: curr.imageUrl,
+        description: curr.description,
+        ratingSummary:
+          curr.ratings.reduce((acc, curr) => acc + curr.value, 0) /
+          curr.ratings.length,
+      }
+
+      acc.push(course)
+
+      return acc
+    }, [])
+    .sort((a, b) => a.ratingSummary - b.ratingSummary)
+    .reverse()
+    .slice(0, 3)
 
   return (
     <>
@@ -47,7 +71,7 @@ export default async function Home() {
               </p>
 
               <div className="flex flex-col md:flex-row items-center md:items-start gap-40 mt-10 w-full md:ml-4 justify-around text-center">
-                {coursesData?.map((course) => {
+                {coursesRatings?.map((course) => {
                   return (
                     <FeaturedCourseCard
                       key={course.id.toString()}
